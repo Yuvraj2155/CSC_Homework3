@@ -8,6 +8,6 @@ class MainApp: Application() {
     }
     override fun onCreate() {
         super.onCreate()
-        workerRepository = WorkerRepository()
+        workerRepository = WorkerRepository(this)
     }
 }
