@@ -8,7 +8,7 @@ class AppInfoScreenViewModel(var repository: WorkerRepository = MainApp.workerRe
     private var appDeveloperName = repository.appDeveloperName
     private var appVersion = repository.appVersion
 
-    fun getAppName1(): String {
+    fun getAppName(): String {
         return appName
     }
 

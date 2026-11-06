@@ -48,4 +48,7 @@ import java.util.Scanner
             }
         }
     }
+        fun getWorkerDetails(name: String): Worker {
+        return workerList.find { it.name == name } ?: Worker("", 0.0, 0.0)
+    }
 }
