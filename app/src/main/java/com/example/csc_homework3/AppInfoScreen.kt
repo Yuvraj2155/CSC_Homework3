@@ -30,9 +30,9 @@ fun DisplayAppInfo(modifier: Modifier = Modifier){
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ){
             DisplayHeading("App Info")
-            DisplayNormalText("Name: ${viewModel.getAppName()}")
-            DisplayNormalText("Developer: ${viewModel.getAppDeveloperName()}")
-            DisplayNormalText("Version: ${viewModel.getAppVersion()}")
+            DisplayNormalText("Name: ${viewModel.appName}")
+            DisplayNormalText("Developer: ${viewModel.appDeveloperName}")
+            DisplayNormalText("Version: ${viewModel.appVersion}")
         }
 
     }

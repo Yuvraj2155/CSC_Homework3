@@ -1,22 +1,16 @@
 package com.example.csc_homework3
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
-class AppInfoScreenViewModel(var repository: WorkerRepository = MainApp.workerRepository) : ViewModel()  {
+class AppInfoScreenViewModel(var repository: WorkerRepository = MainApp.workerRepository) : ViewModel() {
 
-    private var appName = repository.appName
-    private var appDeveloperName = repository.appDeveloperName
-    private var appVersion = repository.appVersion
+    var appName by mutableStateOf(repository.appName)
+    var appDeveloperName by mutableStateOf(repository.appDeveloperName)
+    var appVersion by mutableStateOf(repository.appVersion)
 
-    fun getAppName(): String {
-        return appName
-    }
-
-    fun getAppDeveloperName(): String {
-        return appDeveloperName
-    }
-
-    fun getAppVersion(): String {
-        return appVersion
-    }
 }
+
+
